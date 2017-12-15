@@ -1,3 +1,29 @@
 page-home {
+  .card-stack{
+    position: relative;
+    .card-container{
+      //transition: transform 140ms ease-out;
+      position: absolute;
+      left:0;
+      right:0;
+      margin: auto;
+      width: 98%;
 
+      &.left ion-card{
+        background-color: rgba(201,0,9,0.6);
+      }
+      &.right ion-card {
+        background-color: rgba(0,189,55,0.6);
+      }
+      &.right ion-item, &.left ion-item{
+        background: transparent;
+      }
+    }
+    .first-card{
+      top: 20px;
+      width: 100%;
+    }
+
+    
+  }
 }

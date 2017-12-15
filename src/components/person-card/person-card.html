@@ -1,0 +1,22 @@
+<!-- Generated template for the PersonCardComponent component -->
+<ion-card >
+  <ion-item>
+    <h2>{{count}}/{{total}}</h2>
+  </ion-item> 
+  <img [src]="person?.img">
+  <ion-card-content>
+    <ion-card-title>
+      {{person?.name}}
+    </ion-card-title>
+    <p>
+      {{person?.description}}
+    </p>
+    <p>
+      <ion-icon name="pin"></ion-icon> {{person?.country}}
+    </p>
+    <hr>
+
+    <h2>Interests</h2>
+    <ion-badge *ngFor="let interest of person?.interests" color="secondary">{{interest}}</ion-badge>
+  </ion-card-content>
+</ion-card>

@@ -1,14 +1,22 @@
-<ion-header>
-  <ion-navbar>
+<ion-header >
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      Swipe Cards
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  
+  <button ion-button block (click)="generateCards()">
+    Regenerate Cards
+  </button>
+
+  <div class="card-stack">
+    <div *ngFor="let p of persons; let i=index" 
+       throwable-card (throwLeft)="throwLeft(index)" (throwRight)="throwRight(index)" 
+       class="card-container" [class.first-card]="i==0"  [style.z-index]="persons.length-i"> 
+      <person-card  [person]="p" [total]="totalPersonCount" [count]="i+1" ></person-card>
+    </div>
+  </div>
 </ion-content>
