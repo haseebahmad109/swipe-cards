@@ -1,1 +1,4 @@
-### :point_right: This starter repo has moved to the [ionic-team/starters](https://github.com/ionic-team/starters/tree/master/ionic-angular/official/blank) repo! :point_left:
+![alt text](https://raw.githubusercontent.com/haseebahmad109/swipe-cards/master/src/assets/imgs/screen1.png)
+![alt text](https://raw.githubusercontent.com/haseebahmad109/swipe-cards/master/src/assets/imgs/screen2.png)
+![alt text](https://raw.githubusercontent.com/haseebahmad109/swipe-cards/master/src/assets/imgs/screen3.png)
+
